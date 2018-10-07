@@ -32,6 +32,7 @@ http://polygons.openstreetmap.fr/index.py
 Download jayson: https://itunes.apple.com/us/app/jayson-visual-json-editor/id1189824719?mt=12
 
 2- Store JSON inside a text column.
+
 3- Assuming your column is called `bounds` and table is `cities`,You can read it as follows:
 
 
