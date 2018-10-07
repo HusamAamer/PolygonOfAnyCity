@@ -38,7 +38,8 @@ Download jayson: https://itunes.apple.com/us/app/jayson-visual-json-editor/id118
 
 
 
-**References :**
+
+#### References :
 * https://gis.stackexchange.com/a/192298
 * https://dev.mysql.com/doc/refman/5.7/en/spatial-geojson-functions.html
 
