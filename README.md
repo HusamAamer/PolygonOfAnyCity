@@ -14,24 +14,30 @@ http://polygons.openstreetmap.fr/index.py
 
 5- Choose GeoJSON format
 
-to insert it to MySql
-https://dev.mysql.com/doc/refman/5.7/en/spatial-geojson-functions.html
+#### 🎉🎉🎉 Now we have a MultiPolygon
 
-Use the following format
-{
-“type” : “Polygon”,
-“coordinates” [[
-[xx ,xx],[xx ,xx],[xx ,xx],[xx ,xx],…….
-]]
-}
+# Inserting a polygon to MySql
+1- Prepare the polygon, Use the following format
 
-Inset it in text column and use the following functions to read it as geometry  
+    {
+      “type” : “Polygon”,
+      “coordinates” [[
+        [xx ,xx],
+        [xx ,xx],
+        ...
+        ..
+      ]]
+    }
+*Note: I use jaysoon app in macOS to read and modify JSON easily.
+Download jayson: https://itunes.apple.com/us/app/jayson-visual-json-editor/id1189824719?mt=12
 
-SELECT ST_AsText(ST_GeomFromGeoJSON(bounds)) FROM `cities`
+2- Store JSON inside a text column.
+3- Assuming your column is called `bounds` and table is `cities`,You can read it as follows:
 
 
 
-references :
+
+**References :**
 https://gis.stackexchange.com/a/192298
-
+https://dev.mysql.com/doc/refman/5.7/en/spatial-geojson-functions.html
 
