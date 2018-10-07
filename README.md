@@ -1,4 +1,4 @@
-# PolygonOfAnyCity
+# Get the Polygon of any City and store it in MySql
 How to get polygon of any city or state in the world and save it in MySql table
 
 1- Enter this url and search for any city
